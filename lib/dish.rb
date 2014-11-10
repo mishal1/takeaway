@@ -1,6 +1,6 @@
 class Dish
 
-	attr_accessor :name, :price
+	attr_reader :name, :price
 
 	def create(name, price)
 		@name = name

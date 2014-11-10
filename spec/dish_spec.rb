@@ -28,3 +28,5 @@ describe Dish do
 	end
 
 end
+
+#delete a dish in the take away class
