@@ -7,11 +7,10 @@ Take Away
 
 it should:
 - create new dishes with prices
-- delete dishes
+- change the name or the price of a dish
 
 it interacts with:
 - menu
-
 
 ###Menu
 
@@ -59,8 +58,14 @@ it interacts with:
 ###Line Item
 
 it should:
+- customers dishes and the price of those dishes
+- total the price of those dishes
+- send a message with the receipt
+
 
 it interacts with:
+- messenger
+- customer
 
 ###Restaurant 
 
@@ -69,6 +74,9 @@ it should:
 - Initialize the whole process
 - take in orders from customers and send it to order class
 - send a message once received an order
+- delete a dish
+- create a dish
+- change the price or the name of a dish
 
 
 it interacts with:
