@@ -15,11 +15,14 @@ it interacts with:
 ###Menu
 
 it should:
-- show dishes with the prices
+- show add dishes to the menu
+- show delete dishes from the menu
+- should check if a users order exists
 
 it interacts with:
 - dish
 - restaurant 
+- customer
 
 ###Order
 
