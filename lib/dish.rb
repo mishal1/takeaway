@@ -4,7 +4,7 @@ class Dish
 
 	def create(name, price)
 		@name = name
-		@price = price
+		@price = price.to_i
 	end
 
 	def change_name(name)
@@ -12,7 +12,7 @@ class Dish
 	end
 
 	def change_price(price)
-		@price = price
+		@price = price.to_i
 	end
 
 end

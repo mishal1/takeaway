@@ -20,12 +20,6 @@ describe Menu do
 		expect(menu.items).to eq([])
 	end
 
-	it "should display the menu" do
-		dish.create("burger", 5)
-		menu.add(dish)
-		expect(menu.display).to eq("burger")
-	end
-
 end
 
 #it can check if an order exists

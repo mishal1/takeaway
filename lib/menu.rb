@@ -1,6 +1,6 @@
 class Menu
 
-	attr_accessor :items
+	attr_reader :items
 
 	def initialize
 		@items =[]
@@ -12,12 +12,6 @@ class Menu
 
 	def delete(dish)
 		@items.delete(dish)
-	end
-
-	def display
-		@items.each do |item| 
-			"#{item.dish[:name]}"
-		end
 	end
 
 end
