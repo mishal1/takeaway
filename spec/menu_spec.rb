@@ -3,7 +3,7 @@ require "menu"
 describe Menu do
 
 	let(:menu) {Menu.new}
-	let(:dish) {Dish.new}
+	let(:dish) {double :dish}
 	
 	it "should start with no dishes when initialized" do
 		expect(menu.items).to eq([])
@@ -19,6 +19,11 @@ describe Menu do
 		menu.delete(dish)
 		expect(menu.items).to eq([])
 	end
+
+	it "should be able to see the menu" do
+		menu.add(dish)
+		expect(menu.show).to eq([dish])
+	end	
 
 end
 

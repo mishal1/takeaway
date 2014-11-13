@@ -14,4 +14,8 @@ class Menu
 		@items.delete(dish)
 	end
 
+	def show
+		items
+	end
+
 end
