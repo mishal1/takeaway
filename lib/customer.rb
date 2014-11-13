@@ -24,4 +24,8 @@ class Customer
 		"Your total cost is #{cost}"
 	end
 
+	def remove(dish)
+		@order.delete(dish)
+	end
+
 end

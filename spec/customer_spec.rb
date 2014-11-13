@@ -33,8 +33,16 @@ describe Customer do
 		expect(customer.order).to eq([dish])
 	end
 
+	it "should be able to delete a dish from their order" do
+		customer.choose(dish)
+		customer.remove(dish)
+		expect(customer.order).to eq([])
+	end
+
 	it "should be able to see total cost of an order" do
 		customer.choose(dish)
 		expect(customer.total_cost).to eq("Your total cost is 5")
 	end
 end
+
+#show line item
