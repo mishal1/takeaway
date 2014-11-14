@@ -18,9 +18,7 @@ class Customer
 	end
 
 	def total_cost
-		order.each do |dish|
-			@cost += dish.price
-		end
+		order.each {|dish| @cost += dish.price }
 		"Your total cost is #{cost}"
 	end
 

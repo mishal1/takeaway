@@ -15,14 +15,14 @@ it interacts with:
 ###Menu
 
 it should:
-- show add dishes to the menu
-- show delete dishes from the menu
-- should check if a users order exists
+- add dishes to the menu
+- delete dishes from the menu
+- show the menu
 
 it interacts with:
 - dish
-- restaurant 
 - customer
+- restaurant
 
 ###Order
 
@@ -52,7 +52,7 @@ it should:
 - should be able to pick an item off the menu
 - should be able to see the total
 - should be able to delete an item
-- should be able to pay for order(optional)
+- should be able to pay for order(add later)
 
 it interacts with:
 - restuarant

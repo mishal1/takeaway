@@ -3,7 +3,7 @@ require 'customer'
 describe Customer do
 
 	let(:customer) {Customer.new("Mishal")}
-	let(:dish)	   {double :dish, :price => 5 }
+	let(:dish)	   {double :dish, :name =>'a',:price => 5 }
 	
 	it "should have a name when initialized" do
 		expect(customer.name).to eq("Mishal")
@@ -43,6 +43,7 @@ describe Customer do
 		customer.choose(dish)
 		expect(customer.total_cost).to eq("Your total cost is 5")
 	end
+
 end
 
 #show line item
