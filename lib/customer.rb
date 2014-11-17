@@ -1,6 +1,6 @@
 class Customer
 
-	attr_reader :name, :mobile, :order, :cost
+	attr_reader :name, :mobile, :order, :cost, :menu
 
 	def initialize(name)
 		@name = name
@@ -13,8 +13,22 @@ class Customer
 		@mobile = number
 	end
 
-	def choose(dish)
-		@order << dish
+	def select(menu)
+		@menu = menu
+	end
+
+	def choose(dish, quantity)
+		return raise "First choose a menu" if menu.nil?
+		return raise "Dish doesn't exist" if menu.items.include?(dish) == false
+		dish.set_quantity(quantity)
+		menu.items.select do |item| 
+			item.name == dish.name
+			order << dish
+		end
+	end
+
+	def remove(dish)
+		@order.delete(dish)
 	end
 
 	def total_cost
@@ -22,8 +36,9 @@ class Customer
 		"Your total cost is #{cost}"
 	end
 
-	def remove(dish)
-		@order.delete(dish)
-	end
-
 end
+
+# can add a dish
+# can remove a dish
+# can change quantity of a dish
+# can see total price

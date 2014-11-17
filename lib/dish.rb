@@ -1,10 +1,10 @@
 class Dish
 
-	attr_reader :name, :price
+	attr_reader :name, :price, :quantity
 
-	# def initialize
-	# 	@quantity = 0
-	# end
+	def initialize
+		@quantity = 0
+	end
 
 	def create(name, price)
 		@name = name
@@ -19,8 +19,8 @@ class Dish
 		@price = price.to_i
 	end
 
-	# def set_quantity(number)
-	# 	@quantity = number
-	# end
+	def set_quantity(number)
+		@quantity = number
+	end
 
 end

@@ -27,13 +27,13 @@ describe Dish do
 		expect(dish.price).to eq(4)
 	end
 
-	# it "should have a quantity of 0" do
-	# 	expect(dish.quantity).to eq(0)
-	# end
+	it "should have a quantity of 0" do
+		expect(dish.quantity).to eq(0)
+	end
 
-	# it "should set a quantity" do
-		
-	# end
+	it "should set a quantity" do
+		expect(dish.set_quantity(2)).to eq(2)
+	end
 
 end
 
