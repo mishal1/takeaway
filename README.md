@@ -1,6 +1,6 @@
 #Take Away
 
-Week 2 Challenge at Maker's Academy.
+Week 2 Challenge at Makers Academy.
 
 ##Instructions
 Implement the following functionality:
